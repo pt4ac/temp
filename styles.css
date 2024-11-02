@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import '@videojs/themes/dist/fantasy/index.css';
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3F1F69;
+    color: white;
+    text-align: center;
+    height: 150px;
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 30px;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 150px - 50px); 
+    overflow: scroll;
+}
+
+nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 300px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 300;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.separator {
+    width: 1px;
+    background-color: #3F1F69;
+}
+
+#content {
+    width: 100%;
+    padding: 0;
+    overflow-y: auto;
+
+  }
+
+  #content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Adjust the duration as needed */
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure it takes up the full height of the container */
+    padding: 20px; /* Optional: Adds some padding around the content */
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+video{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: auo;
+}
+
+.title, .description{
+
+    margin-left: 50px;
+}
+
+.title-button-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3F1F69;
+    margin: 0;
+}
+
+.description{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+
+}
+
+footer {
+    height: 50px;
+    background-color: #3F1F69;
+    margin: 0;
+    padding: 0;
+}
+
+.signature{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+
+button {
+    background-color: #3F1F69;
+    height: 40px;
+    width: 110.24px;
+    border: 0;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px; /* Adjust space between title and button */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: #8a30ca;
+    cursor: pointer;
+}
+
+.title:hover, .linkproper:hover{
+    color: #8a30ca;
+    cursor: pointer;
+}
+
+#heading h1{
+    cursor: pointer;
+}
+
+.linkproper{
+    color: #3F1F69;
+    text-decoration: underline;
+}
+
+.selected{
+    font-weight: 600;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+
+#content iframe {
+    max-width: 80%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the video scales properly within the container */
+    margin: auto;
+}
+
+
+#content iframe {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: contain;
+    box-shadow: rgb(51, 51, 51) 10px 10px 35px -10px;
+}
+
+@media (max-width: 950px) {
+    #content iframe {
+        max-width: 100%;}
+  }
+  
+
+  .image-container {
+    text-align: center; /* Centers the image horizontally */
+    margin-top: 20px; /* Adds space above the image */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.float-image {
+    float: right; /* Floats the image to the right */
+    margin-left: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Adds space below the image */
+}
+
+.description {
+    position: relative; /* Ensure relative positioning for the image */
+}
+
+.float-image {
+    float: right; /* Floats the image to the right */
+    margin-left: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Adds space below the image */
+    vertical-align: top; /* Aligns the top of the image with the top of the text */
+}
+
+.mobile-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(31, 11, 58, 0.98);
+    color: white;
+    text-align: center;
+    z-index: 9999;
+    padding-top: 20px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+
+
+.mobile-warning p {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.mobile-warning button {
+    background-color: #3F1F69;
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 10px 20px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.mobile-warning button:hover {
+    background-color: #8a30ca;
+}
+
+.mrimg {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mrimg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s;
+  }
+  
+  .mrimg:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+
+.top-text{
+    padding-top: 30%;
+}
+
+.side-by-side-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Add space between text and image */
+    gap: 20px; /* Optional: Adds space between elements */
+}
+
+.text-container {
+    flex: 1;
+}
+
+.image-container {
+    flex: 0 0 auto;
+}
+
+.float-image {
+    max-width: 300px; /* Adjust as needed */
+    height: auto;
+}
+
+.c-heading{
+    color:#3F1F69;
+    font-family: 'Inter';
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.c-img{
+    margin-left:50px;
+    margin-top:20px;
+}
+
+.c-para{
+    color:#3F1F69;
+    margin-left:50px;
+    margin-top:10px;
+    font-family: 'Inter';
+    font-size: 1.2rem;
+}
+
+
+.title-button-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.play {
+    background-color: #3F1F69;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left:0 ;
+}
+
+.play:hover {
+    background-color: #8a30ca;
+}

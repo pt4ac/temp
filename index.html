@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body id="bodyid">
+
+    <div id="mobile-warning" class="mobile-warning">
+        <p class="top-text">Website not optimized for small screens.<br> Sorry, I didn't have the time :/<br>Midterm exam season, you know?</p>
+        <p>Please view on a computer.<br>If already on computer, please increase window width.</p><p>Or proceed anyway<br>It'll be hard to read, but you do you</p>
+        <button class="proccedbtn" onclick="proceedAnyway()">Proceed</button>
+    </div>
+
+    <header id="heading">
+        <h1>Pragyam Tiwari</h1>
+        <h2>for Amherst College 2025</h2>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('video')" id="1">VIDEO</a></li>
+                <li><a href="#" onclick="showContent('mammoth')" id="2">MAMMOTH RUN</a></li>
+                <li><a href="#" onclick="showContent('grammar')" id="3">GRAMMAR ALLY</a></li>
+                <li><a href="#" onclick="showContent('akinator')" id="4">AI AKINATOR</a></li>
+                <li><a href="#" onclick="showContent('elections')" id="5">ELECTION EYE</a></li>
+                <li><a href="#" onclick="showContent('ikwyaf')" id="6">IKWYAF</a></li>
+                <li><a href="#" onclick="showContent('tweeter')" id="7">QUOTE-É-MON</a></li>
+                <li><a href="#" onclick="showContent('sentiment')" id="8">EMOTION EXTRACT</a></li>
+                <li><a href="#" onclick="showContent('clock')" id="9">COUNTING CLOCKS</a></li>
+            </ul>
+        </nav>
+        
+        <div class="separator"></div>
+        <section id="content">
+            <!-- Content will be dynamically inserted here -->
+        </section>
+
+    </div>
+
+    <footer>
+        <p class="signature"><a href="mailto:pragyam.tiwari@gmail.com">pragyam.tiwari@gmail.com</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
